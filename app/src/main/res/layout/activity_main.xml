@@ -13,12 +13,13 @@
         android:layout_margin="8dp"
         android:text="@string/title"
         android:textColor="@color/textColor"
-        android:textSize="@dimen/title" />
+        android:textSize="@dimen/large" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal" android:baselineAligned="false">
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -27,17 +28,20 @@
             android:orientation="vertical"
             tools:context=".MainActivity">
 
-            <TextView
+
+            <EditText
+                android:id="@+id/name_team_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/dps8"
+                android:layout_marginLeft="@dimen/dps16"
+                android:layout_marginRight="@dimen/dps16"
                 android:layout_marginTop="@dimen/dps64"
-                android:fontFamily="sans-serif-medium"
+                android:freezesText="true"
                 android:gravity="center"
+                android:hint="@string/teamA"
                 android:padding="@dimen/dps4"
-                android:text="@string/teamA"
-                android:textColor="@color/textColor"
-                android:textSize="@dimen/teams" />
+                android:textSize="@dimen/med" />
+
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -45,12 +49,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="@dimen/dps8"
-                android:fontFamily="sans-serif-light"
+                android:freezesText="true"
                 android:gravity="center"
                 android:padding="@dimen/dps4"
                 android:text="@string/score"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/title" />
+                android:textSize="@dimen/large" />
 
             <Button
                 android:layout_width="match_parent"
@@ -63,7 +67,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:onClick="addThreeForTeamA"
                 android:text="@string/threepoints"
-                android:textColor="@color/textColorTwo" />
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
 
             <Button
                 android:layout_width="match_parent"
@@ -76,7 +81,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:onClick="addTwoForTeamA"
                 android:text="@string/twopoints"
-                android:textColor="@color/textColorTwo" />
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
 
             <Button
                 android:layout_width="match_parent"
@@ -88,7 +94,21 @@
                 android:background="@color/colorPrimaryDark"
                 android:onClick="addOneForTeamA"
                 android:text="@string/onepoint"
-                android:textColor="@color/textColorTwo" />
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dps8"
+                android:layout_marginLeft="@dimen/dps32"
+                android:layout_marginRight="@dimen/dps32"
+                android:layout_marginTop="@dimen/dps4"
+                android:background="@color/colorAccent"
+                android:onClick="minusOneForTeamA"
+                android:text="@string/minusone"
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
         </LinearLayout>
 
 
@@ -98,17 +118,20 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
+
+            <EditText
+                android:id="@+id/name_team_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/dps8"
+                android:layout_marginLeft="@dimen/dps16"
+                android:layout_marginRight="@dimen/dps16"
                 android:layout_marginTop="@dimen/dps64"
-                android:fontFamily="sans-serif-medium"
+                android:freezesText="true"
                 android:gravity="center"
+                android:hint="@string/teamB"
                 android:padding="@dimen/dps4"
-                android:text="@string/teamB"
-                android:textColor="@color/textColor"
-                android:textSize="@dimen/teams" />
+                android:textSize="@dimen/med" />
+
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -116,12 +139,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dps8"
                 android:layout_marginTop="@dimen/dps8"
-                android:fontFamily="sans-serif-light"
+                android:freezesText="true"
                 android:gravity="center"
                 android:padding="@dimen/dps4"
                 android:text="@string/score"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/scores" />
+                android:textSize="@dimen/large" />
 
             <Button
                 android:layout_width="match_parent"
@@ -134,7 +157,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:onClick="addThreeForTeamB"
                 android:text="@string/threepoints"
-                android:textColor="@color/textColorTwo" />
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
 
             <Button
                 android:layout_width="match_parent"
@@ -147,7 +171,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:onClick="addTwoForTeamB"
                 android:text="@string/twopoints"
-                android:textColor="@color/textColorTwo" />
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
 
             <Button
                 android:layout_width="match_parent"
@@ -159,7 +184,22 @@
                 android:background="@color/colorPrimaryDark"
                 android:onClick="addOneForTeamB"
                 android:text="@string/onepoint"
-                android:textColor="@color/textColorTwo" />
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dps8"
+                android:layout_marginLeft="@dimen/dps32"
+                android:layout_marginRight="@dimen/dps32"
+                android:layout_marginTop="@dimen/dps4"
+                android:background="@color/colorAccent"
+                android:onClick="minusOneForTeamB"
+                android:text="@string/minusone"
+                android:textColor="@color/textColorTwo"
+                android:textSize="@dimen/small" />
+
         </LinearLayout>
 
 
@@ -172,8 +212,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/dps32"
-        android:background="@android:color/holo_red_dark"
+        android:background="@color/androidgreen"
         android:onClick="reset"
         android:text="@string/reset"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        android:textSize="@dimen/small" />
 </RelativeLayout>
