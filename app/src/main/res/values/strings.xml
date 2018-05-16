@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Court Counter</string>
+    <string name="app_name">Court Counter
+    </string>
+    <string name="teamA">"Team A"</string>
+    <string name="teamB">"Team B"</string>
+    <string name="title">"Basketball App</string>
+    <string name="threepoints">"+3 Points"</string>
+    <string name="twopoints">"+2 Points"</string>
+    <string name="onepoint">"Free Throw"</string>
+    <string name="minusone">"Oops! Minus One"</string>
+    <string name="reset">"Reset"</string>
+    <string name="score">0</string>
+    <string name="next">"Next Team"</string>
+
 </resources>
